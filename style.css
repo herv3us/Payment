@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+
+/*   UNIVERSAL    */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(247, 204, 239);
+    color: rgb(184, 31, 158);
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+/*  HEADER  */
+
+header{
+    width: 100%;
+}
+
+nav{
+    padding: 1rem;
+    border-radius: .5rem .5rem 0 0 ;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(184, 31, 158);
+}
+
+nav .ball{
+    padding: .4rem;
+    margin: 0 .1rem;
+}
+
+nav .red{
+    background-color: red;
+    padding: .4rem;
+    border-radius: 50%;
+}
+
+nav .yellow{
+    background-color: rgb(229, 255, 0);
+    padding: .4rem;
+    border-radius: 50%;
+}
+
+nav .green{
+    background-color: rgb(13, 243, 63);
+    padding: .4rem;
+    border-radius: 50%;
+}
+
+
+/*   MAIN   */
+
+main{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+main h1{
+    text-align: center;
+    margin: .6rem;
+    font-size: 1.8rem;
+}
+
+form{
+    padding: 0 1.5rem 1.7rem 1.5rem;
+}
+
+form .formular{    
+    padding: .4rem .7rem;
+}
+
+
+input{
+    margin: .2rem 0;
+    border: .12rem rgb(184, 31, 158) solid;
+    padding: .2rem;
+    border-radius: .2rem;
+}
+
+.pay > input{
+    width: 100%;
+}
+
+label{
+    display: block;
+}
+
+.inline{
+    display: inline-block;
+    width: 47%;
+}
+.card input{
+    width: 75%;
+}
+
+/*   BUTTON   */
+
+.btn{
+    width: 100%;
+    background-color: rgb(184, 31, 158);
+    border: none;
+    padding: .4rem;
+    border-radius: .2rem;
+    color: #fff;
+}
+
+.btn:hover{
+    transform: scale(.99);
+}
+
+@media only screen and (min-width:768px){
+    body{
+        min-width: 400px;
+        max-width: 500px;
+    }
+    
+}
+
+@media only screen and (max-width:350px){
+    body{
+        display: flex;
+        max-width: 320px;
+    }
+    .inline{
+        display: block;
+        width: 77%;
+    }
+    
+}

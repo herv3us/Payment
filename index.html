@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Subscription Payment</title>
+</head>
+<body>
+
+    <!--  HEADER med NAV  -->
+    <header>
+        <nav>
+            <a href="#" class="ball red"> </a>
+            <a href="#" class="ball yellow"> </a>
+            <a href="#" class="ball green"> </a>
+        </nav>
+    </header>
+
+    <!--   MAIN med FORM  -->
+
+    <main>
+        <form action="">
+            <h1>Payment Details</h1>
+            <article class="formular pay">
+                <label for="name">Card Owner</label>
+                <input type="text" name="name" id="name" placeholder="John Doe" required>
+            </article>
+
+            <article class="formular pay">
+                <label for="cardnumber">Card Number</label>
+                <input type="text" name="cardnumber" id="cardnumber" placeholder="Valid Card Number" required>
+            </article>
+
+            <div class="inline">
+            <article class="formular card">
+                <label for="expiration">Expiration date</label>
+                <input type="month" name="expirationDate" id="expiration" value="2021-02" min="2021-02" max="2025-09" required>
+            </article>
+            </div>
+            <div class="inline">
+            <article class="formular card">
+                <label for="cvCode">CV Code</label>
+                <input type="text" name="cvCode" id="cvCode" placeholder="CVC" required>
+            </article>
+        </div>
+
+            <button type="submit" class="btn">Pay 
+                subscription </button>
+        </form>
+    </main>
+</body>
+</html>
